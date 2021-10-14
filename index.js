@@ -46,8 +46,8 @@ function minus() {
 }
 
 // Notification
-if ( timeLeft < 0 ) {
-    timeLeft = 0
-} else {
-    document.getElementById("display").innerHTML = "END"
-}
+// if ( timeLeft <= 0 ) {
+//     timeLeft = 0
+// } else {
+//     document.getElementById("display").innerHTML = "END"
+// }
