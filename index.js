@@ -2,7 +2,8 @@
 let timeLeft = 60;
 
 // audio file
-var audio = new Audio("Time up.mp3");
+var audio = new Audio();
+audio.src = "Time up.mp3";
 
 // time function
 function time() {
