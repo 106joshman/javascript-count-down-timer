@@ -37,7 +37,7 @@ function start() {
 }
 
 // to stop count down time
-function clear() {
+function pause() {
   clearInterval(countTime);
 }
 
