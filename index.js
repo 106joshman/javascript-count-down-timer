@@ -1,5 +1,5 @@
 // time left for one hour
-let timeLeft = 60;
+let timeLeft = 0;
 
 // audio file
 var audio = new Audio();
@@ -29,10 +29,12 @@ function time() {
   }
 }
 
-countTime = setInterval(time, 1000);
+// countTime = setInterval(time, 1000);
 
 // to start count down time
 function start() {
+  timeLeft = 120;
+  document.body.style.background = "black";
   countTime = setInterval(time, 1000);
 }
 
@@ -43,7 +45,7 @@ function pause() {
 
 // to reset count down time
 function reset() {
-  timeLeft = 60;
+  timeLeft = 0;
   document.body.style.background = "black";
 
   // to stop audio file
@@ -53,7 +55,7 @@ function reset() {
 
 // to add more time
 function add() {
-  timeLeft = timeLeft + 30;
+  timeLeft = timeLeft + 60;
 }
 
 // to reduce time

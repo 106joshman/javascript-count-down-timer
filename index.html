@@ -8,29 +8,35 @@
     <title>Count Down Timer</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-bar">
-        <h3>Dev-Guy</h3>
-        <div class="nav-links">
-          <a href="/">Contact</a>
+    <header>
+      <nav>
+        <h2>
+          <a href="/">Dev-Guy.</a>
+        </h2>
+        <div className="contact">
+          <a href="https://github.com/106joshman/javascript-count-down-timer">Contact</a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <div class="wrapper">
       <div class="body">
-        <h3>Count Down Timer</h3>
-        <div class="display">
-          <p id="display">--:--</p>
+        <div class="title">
+          <h3>Count Down Timer</h3>
+        </div>
+        <div className="time-wrapper">
+          <div class="display">
+            <p id="display">--:--</p>
+          </div>
           <div class="side-bttn">
             <button id="add" onclick="add()">+</button>
             <button id="minus" onclick="minus()">-</button>
           </div>
-        </div>
-        <div class="bttn">
-          <button class="btn start" onclick="start()">Start</button>
-          <button class="btn reset" onclick="reset()">Reset</button>
-          <button class="btn pause" onclick="pause()">Pause</button>
+          <div class="bttn">
+            <button class="btn start" onclick="start()">Start</button>
+            <button class="btn reset" onclick="reset()">Reset</button>
+            <button class="btn pause" onclick="pause()">Pause</button>
+          </div>
         </div>
       </div>
     </div>
